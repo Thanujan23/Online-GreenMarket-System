@@ -1,0 +1,167 @@
+/* General styles for the chat interface */
+.chat-message {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    max-height: 450px;
+    overflow-y: auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chat-message img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.text-primary {
+    font-weight: bold;
+    color: #053a17;
+    margin-left: 10px;
+}
+
+.message-left,
+.message-right {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    max-width: 80%;
+}
+
+.message-left {
+    justify-content: flex-start;
+}
+
+.message-right {
+    justify-content: flex-end;
+}
+
+.message-icon {
+    margin-left: 10px;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+/* Input and button styling */
+.form-control {
+    border-radius: 20px;
+    padding: 10px 15px;
+    border: 1px solid #000000;
+    width: 80%;
+}
+
+button[type="primary"] {
+    background-color: #197f10;
+    color: rgb(223, 224, 223);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button[type="primary"]:hover {
+    background-color: #65855f;
+}
+
+/* Copyright section */
+#copyright {
+    text-align: center;
+    color: #6c757d;
+    font-size: 12px;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #8b97a2;
+}
+
+.back-arrow {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .back-arrow img {
+    width: 40px;
+    height: 40px;
+  }
+
+
+  /* ChatMessage Stylesheet */
+
+/* General container for the chat message */
+.d-flex {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+/* Styles for user messages (right side) */
+.message-right {
+    display: flex;
+    align-items: center;
+    background-color: #c9d0d9;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 60%;
+    word-wrap: break-word;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message-right .message-text {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.message-right .message-icon {
+    font-size: 24px;
+    color: rgb(1, 109, 34);
+}
+
+/* Styles for non-user messages (left side) */
+.message-left {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 60%;
+    word-wrap: break-word;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message-left .message-text {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.message-left .message-icon {
+    font-size: 24px;
+    color: #056e20;
+}
+
+/* Adding some responsiveness */
+@media (max-width: 768px) {
+    .message-right, .message-left {
+        max-width: 80%;
+    }
+}
